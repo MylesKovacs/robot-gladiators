@@ -23,11 +23,14 @@ for(var i = 0; i < enemyNames.length; i++) {
 
 var fight = function(enemyName) {
     while (playerHealth > 0 && enemyHealth > 0) {
-      // ask player if they'd liked to fight or run
-      var promptFight = window.prompt('Would you like FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
+        if(playerHealth > 0){
+            window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ));
+        }
+        // ask player if they'd liked to fight or run
+        var promptFight = window.prompt('Would you like FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
   
-      // if player picks "skip" confirm and then stop the loop
-      if (promptFight === "skip" || promptFight === "SKIP") {
+        // if player picks "skip" confirm and then stop the loop
+        if (promptFight === "skip" || promptFight === "SKIP") {
         // confirm player wants to skip
         var confirmSkip = window.confirm("Are you sure you'd like to quit?");
   
