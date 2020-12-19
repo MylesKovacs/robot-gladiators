@@ -10,8 +10,8 @@ var playerInfo = {
   },
   refillHealth: function() { 
     if (this.money >= 7) {
-    window.alert("Refilling player's health by 20 for 7 dollars.");
-    this.health += 20;
+    window.alert("Refilling player's health by 30 for 7 dollars.");
+    this.health += 30;
     this.money -=7;
     }
     else {
@@ -20,8 +20,8 @@ var playerInfo = {
   },
   upgradeAttack: function() {
     if (this.money >= 7) {
-      window.alert("Upgrading player's attack by 6 for 7 dollars.");
-    this.attack += 6;
+      window.alert("Upgrading player's attack by 10 for 7 dollars.");
+    this.attack += 10;
     this.money -= 7;
     }
     else {
